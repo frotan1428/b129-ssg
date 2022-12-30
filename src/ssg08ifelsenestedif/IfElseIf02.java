@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class IfElseIf02 {
     public static void main(String[] args) {
-        // Soru 3) Kullanicidan 100 uzerinden notunu isteyin.
+        // Soru 2) Kullanicidan 100 uzerinden notunu isteyin.
         // Not’u harf sistemine cevirip yazdirin.
         // 50’den kucukse “D”,
         // =50  <60 arasi “C”,
