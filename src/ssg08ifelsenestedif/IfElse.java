@@ -23,8 +23,9 @@ public class IfElse {
 
         if(dt|| nt){
             System.out.println("sınıfa katılabilirim");
-        }else{
-            System.out.println("sınıfa katılamıyorum");
+        }
+        if(dt|| nt){
+            System.out.println("sınıfa katılabilirim");
         }
 
 

@@ -7,16 +7,12 @@ public class NestedLoop01 {
   /*
         soru 1)  Asagidaki sekil cizen kodu yaziniz
 
-                . . . .1
-                . . . 2
-                . . 3
-                . 4
+                * * * *1
+                * * * 2
+                * * 3
+                * 4
                 5
                 */
-
-
-
-
 
 
         for (int line = 1; line <= 5; line++) {
@@ -25,7 +21,6 @@ public class NestedLoop01 {
                 System.out.print(". ");
 
             }
-
             System.out.println(line);
 
         }

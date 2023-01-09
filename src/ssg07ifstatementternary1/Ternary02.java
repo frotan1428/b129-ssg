@@ -22,8 +22,8 @@ public class Ternary02 {
             System.out.println("sayi tek");
         }
 
-
-        System.out.println(sayi%2==0 ? "Sayi cift" : "sayi tek");
+        int saty= sayi%2==0 ? sayi*sayi : sayi*sayi*sayi;
+        System.out.println(saty);
 
 
 
