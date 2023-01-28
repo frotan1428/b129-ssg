@@ -3,6 +3,8 @@ package ssg17multidemntionalarray;
 public class Md09 {
     public static void main(String[] args) {
 /*
+
+
         9.soru Verilen bir multi dimensional array'in
         tum elemanlarini toplayan bir method yazalim,
     */
