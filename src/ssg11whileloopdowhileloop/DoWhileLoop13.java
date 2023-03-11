@@ -4,36 +4,36 @@ import java.util.Scanner;
 
 public class DoWhileLoop13 {
     public static void main(String[] args) {
-        // Kullanicidan toplamak uzere pozitif sayilar isteyin,
-        // islemi bitirmek icin 0’a basmasini soyleyin.
-        //	Kullanici yanlislikla negative sayi girerse o sayiyi dikkate almayin
-        //	ve “Negatif sayi giremezsiniz” yazdirip basa donun
-        //	Kullanici 0’a bastiginda toplam kac pozitif sayi girdigini,
-        //	yanlislikla kac negative sayi girdigini
-        //	ve girdigi pozitif sayilarin toplaminin kac oldugunu yazdirin.
+        // Ask from user for positive numbers to sum of this number,
+        // press 0 to finish the process.
+        // If the user wrongly  enters a negative number, ignore that number
+        // and print "You cannot enter negative numbers" and return to the beginning
+        // When the user presses 0, how many positive numbers are entered in total,
+        // how many negative numbers you entered by mistake
+        // and print the sum of the positive numbers it entered.
 
 
         Scanner scan =new Scanner(System.in);
-        int sayi=1;
-        int toplam=0;
-        int sayacPozitif=0;
-        int sayacNegatif=0;
+        int number=1;
+        int total=0;
+        int counterPositive=0;
+        int counterNegative=0;
 
         do {
-            System.out.println("Lutfen pozitif bir tam sayi girin \nbitirmek icin 0'a basin ");
-            sayi=scan.nextInt();
-            if (sayi<0){
-                System.out.println("Negatif sayi giremezsiniz");
-                sayacNegatif++;
-            } else if (sayi>0){
-                toplam+=sayi;
-                sayacPozitif++;
+            System.out.println("Please enter a positive integer\npress 0 to finish");
+            number=scan.nextInt();
+            if (number<0){
+                System.out.println("You cannot enter negative numbers");
+                counterNegative++;
+            } else if (number>0){
+                total+=number;
+                counterPositive++;
             }
 
-        } while(sayi !=0);
-        System.out.println("Yanlislikla girilen negatif sayi adedi : " + sayacNegatif);
-        System.out.println("Girilen pozitif sayi adedi : " + sayacPozitif);
-        System.out.println("girilen pozitif sayilarin toplami : " + toplam );
+        } while(number !=0);
+        System.out.println("Number of negative numbers entered by mistake: " + counterNegative);
+        System.out.println("Number of positive numbers entered: " + counterPositive);
+        System.out.println("sum of positive numbers entered: " + total );
 
     }
 }

@@ -6,11 +6,12 @@ package ssg13scope;
 2)local variable
 3)static Variable
 
-instance variable ve  local variable arasindaki fark ne dir ?
+What is the difference between instance variable and local variable?
 
-1)  instance variable class icinde tanimlir  local variable ise method icinde tanimlanir.
-2) instance variable ilk degieri koymazsaniz olur hata vermez sonra koyabilir siniz ama Local varibale
-ilk degri atmaniz lazim.
+1) An instance variable is defined for its class, and a local variable is defined for its method.
+2) If you don't put the first value in the instance variable, it won't make any mistakes,
+you can put it later, but Local variable
+you need to put the first value.
 */
 public class LocalVariableScope {
 

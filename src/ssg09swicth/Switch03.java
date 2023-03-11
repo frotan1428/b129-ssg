@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class Switch03 {
     public static void main(String[] args) {
 
-        //Toplama, Çıkarma, Çarpma, Bölme ve yüzde Hesaplama yapan basit bir Hesap Makinesi oluşturun:
+        //Create a simple Calculator that does Addition,
+        // Subtraction, Multiplication, Division and Percent Calculation:
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter day First Number");
         Double firstNumber = scan.nextDouble();

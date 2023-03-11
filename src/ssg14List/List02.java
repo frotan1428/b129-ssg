@@ -6,36 +6,36 @@ import java.util.List;
 public class List02 {
     public static void main(String[] args) {
 
-        List<String> isimler=new ArrayList<>();
-        isimler.add("Aykut");
-        isimler.add("Yusuf");
-        isimler.add("Ilker");
-        isimler.add("Oguzhan");
-        System.out.println(isimler); // [Aykut, Yusuf, Ilker, Oguzhan]
+        List<String> names=new ArrayList<>();
+        names.add("Aykut");
+        names.add("Yusuf");
+        names.add("Ilker");
+        names.add("Oguzhan");
+        System.out.println(names); // [Aykut, Yusuf, Ilker, Oguzhan]
 
-        isimler.set(1,"Seckin"); // Yusuf gitti, yerine Seckin geldi
-        System.out.println(isimler); // [Aykut, Seckin, Ilker, Oguzhan]
+        names.set(1,"Seckin"); // Yusuf gitti, yerine Seckin geldi
+        System.out.println(names); // [Aykut, Seckin, Ilker, Oguzhan]
 
         // daha onceden listede var olanlari da arsiv gibi tutmak istersek
         List<String> logListesi=new ArrayList<>();
 
-        logListesi.add(isimler.set(2,"Cosmos"));
+        logListesi.add(names.set(2,"Cosmos"));
 
-        System.out.println(isimler); // [Aykut, Seckin, Cosmos, Oguzhan]
+        System.out.println(names); // [Aykut, Seckin, Cosmos, Oguzhan]
         System.out.println(logListesi); // [Ilker]
 
 
         /// index
-        List<Integer> sayilarList= new ArrayList<>();
-        sayilarList.add(5); // [5]
-        sayilarList.add(3); // [5, 3]
-        sayilarList.add(0,7); // [7, 5, 3]
-        sayilarList.add(2,7); // [7, 5, 7, 3]
+        List<Integer> numberList= new ArrayList<>();
+        numberList.add(5); // [5]
+        numberList.add(3); // [5, 3]
+        numberList.add(0,7); // [7, 5, 3]
+        numberList.add(2,7); // [7, 5, 7, 3]
 
-            // elmean almak icin
-        System.out.println(sayilarList.get(2)); // 7
+            // to get element
+        System.out.println(numberList.get(2)); // 7
 
-        System.out.println(sayilarList); // [7, 5, 7, 3]
+        System.out.println(numberList); // [7, 5, 7, 3]
 
 
 

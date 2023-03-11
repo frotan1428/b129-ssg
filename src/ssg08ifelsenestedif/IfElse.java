@@ -4,9 +4,9 @@ public class IfElse {
     public static void main(String[] args) {
 
 
-        //Gündüz dersimiz varsa katılabilirim
+        // If we have a daily class, I can attend
 
-        //Gece sınıfımız varsa ona da  katılabilirim
+        // If we have a night class, I can attend it
 
 
         boolean dt = false; //  available
@@ -22,10 +22,10 @@ public class IfElse {
         //boolean isAvilable = dt||nt;
 
         if(dt|| nt){
-            System.out.println("sınıfa katılabilirim");
+            System.out.println("you can join the Class");
         }
         if(dt|| nt){
-            System.out.println("sınıfa katılabilirim");
+            System.out.println("You can  not Join the CLass");
         }
 
 

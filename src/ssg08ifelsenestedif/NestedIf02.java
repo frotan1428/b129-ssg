@@ -5,17 +5,17 @@ import java.util.Scanner;
 public class NestedIf02 {
     public static void main(String[] args) {
 
-        /*
+       /*
 
-            Parolanın baş harfi büyükse, 'A' olup olmadığını kontrol edin.
-            'A' ise  "Geçerli Parola" olacaktır.
-            aksi takdirde  "Geçersiz Parola" olacaktır.
-            Örneğin; Ali ==> Geçerli şifre - ali ==> Geçersiz - İşaret ==> Geçersiz
+            If the password is capitalized, check "A".
+            "A" will be "current password".
+            Otherwise, it will be "Invalid password".
+            For example; Ali ==> valid password - ali ==> invalid - mark ==> invalid
 
-            Parolanın baş harfi küçükse, 'z' olup olmadığını kontrol edin.
-            'z' ise   "Geçerli Parola" olacaktır.
-            aksi takdirde "Geçersiz Parola" olacaktır.
-            Örneğin; zoe ==> Geçerli şifre - Zoe ==> Geçersiz - john ==> Geçersiz
+            If the password is small, check "z".
+            "z" will be "current password".
+            Otherwise, it will be "Invalid password".
+            For example; zoe ==> valid password - Zoe ==> invalid - john ==> invalid
                       */
 
         Scanner scan = new Scanner(System.in);
@@ -52,7 +52,7 @@ public class NestedIf02 {
                 System.out.println("Invalid Password");
             }
         } else if (firstChar>= 'a' && firstChar <= 'z') {
-            if (firstChar == 'z') {
+            if (firstChar == 'a') {
                 System.out.println("Valid Password");
             } else {
                 System.out.println("Invalid password");

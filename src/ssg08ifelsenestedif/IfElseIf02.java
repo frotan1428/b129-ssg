@@ -4,31 +4,30 @@ import java.util.Scanner;
 
 public class IfElseIf02 {
     public static void main(String[] args) {
-        // Soru 2) Kullanicidan 100 uzerinden notunu isteyin.
-        // Not’u harf sistemine cevirip yazdirin.
-        // 50’den kucukse “D”,
-        // =50  <60 arasi “C”,
-        // =60  <80 arasi “B”,
-        // =80’nin uzerinde ise “A”
+        // Question 2) Ask the user for a score of more than 100.
+        // Convert the note to character system and print it.
+        // "D" if less than 50,
+        // =50 <60 "C",
+        // =60 <80 between "B",
+        // "A" if greater than 80;
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("Lutfen notunuzu giriniz");
+        System.out.println("Please enter your Grade");
 
-        double notSayi= scan.nextDouble();
+        double grade= scan.nextDouble();
 
-        if(notSayi<0 || notSayi>100){
-            System.out.println("Lutfen gecerli bir not giriniz");
+        if(grade<0 || grade>100){
+            System.out.println("Please enter a valid point");
         }
-        else if (notSayi<50){
-            System.out.println("notunuz D");
-        } else if (notSayi<60){
-            System.out.println("notunuz C");
-        } else if(notSayi<80){
-            System.out.println("Notunuz B");
-        } else {
-            System.out.println("Notunuz A");
+        else if (grade<50){
+            System.out.println("Your grade is D");
+        } else if (grade<60){
+            System.out.println("Your grade is C");
+        } else if(grade<80){
+            System.out.println("Your grade is B");
+        }else {
+            System.out.println("Your grade is A");
         }
-
 
     }
 }

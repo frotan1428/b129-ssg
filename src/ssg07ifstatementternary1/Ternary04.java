@@ -5,10 +5,8 @@ public class Ternary04 {
 
         /*
 
-        2 tam sayınız var;
-        Her iki tamsayı da pozitifse çarpma işlemi yapın
-        Biri negatifse diğeri pozitif ise "çarpma nasıl yapılır bilmiyorum"
-         */
+        Multiplication 2 integer number If both integers are positive,
+       if one is negative and the other is positive, print  "I don't know how to multiply" */
         int a=12;
         int b=-5;
         //Note: If your ternary returns different data types for different scenarios,

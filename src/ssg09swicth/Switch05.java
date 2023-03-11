@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class Switch05 {
     public static void main(String[] args) {
-        //ingilizce de Ünlü veya Ünsüz harflerini kontrol etmek için bit program yaziniz:
+        //write a program to check Vowel or Consonant letters in English:
 
         Scanner input = new Scanner(System.in);
-        System.out.println("lutfen bir ingilizce harfi yaziniz");
+        System.out.println("please Write an english character");
         char ch=input.next().toLowerCase().charAt(0);
         switch(ch) {
             case 'a':
@@ -15,7 +15,7 @@ public class Switch05 {
             case 'i':
             case 'o':
             case 'u':
-                System.out.println("=="  + ch + "=="  + " vowela bir harf dir : ");
+                System.out.println("=="  + ch + "=="  + " is an vowel letter : ");
                 break;
 
                 /*
@@ -24,12 +24,12 @@ public class Switch05 {
                     case 'I':
                     case 'O':
                     case 'U':
-                System.out.println("=="  + ch + "=="  + " vowela bir harf dir : ");
+               System.out.println("=="  + ch + "=="  + " is an vowel letter : ");
                 break;
                  */
 
             default:
-                System.out.println("-"  + ch + "-"  + " Consonant bir harf dir : ");
+                System.out.println("-"  + ch + "-"  + " is a consonant letter  : ");
         }
     }
 }

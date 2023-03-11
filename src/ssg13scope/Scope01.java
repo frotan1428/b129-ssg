@@ -6,11 +6,11 @@ public class Scope01 {
 
     public static void main(String[] args) {
         System.out.println(x);
-        Scope01.getSayi();
+        Scope01.getNumber();
 
     }
 
-    public static void getSayi(){
+    public static void getNumber(){
         System.out.println(x);
 
     }

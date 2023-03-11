@@ -3,7 +3,8 @@ package ssg10forloop;
 public class ForLoop04 {
     public static void main(String[] args) {
         /*
-        Soru 4) 100'den baslayarak 50'ye (dahil) kadar olan sayilari aralarinda virgul olarak ayni satirda yazdirin
+       Question 4) print Numbers from 100 to 50 (inclusive)
+          on the same line with commas between them.
          */
         int bas=100;
         int son=50;

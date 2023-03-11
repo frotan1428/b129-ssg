@@ -3,8 +3,8 @@ package ssg11whileloopdowhileloop;
 public class WhileLoop01 {
 
     public static void main(String[] args) {
-        // Kullanicidan bir sayi alin ve
-        // bu sayiyi tam bolen sayilari ve toplam kac tane olduklarini ekranda yazdirin
+        // Get a number from the user and
+        // print the dividing numbers of this number and the total number on the screen
 
 
         int input=6;
@@ -12,19 +12,19 @@ public class WhileLoop01 {
         // for loop ile de yapabiliriz ama biz
         // while loop ile yapalim
 
-        int bolen=1;
-        int sayac=0;
+        int divided=1;
+        int counter=0;
 
-        while(bolen<=input){
+        while(divided<=input){
 
-            if (input % bolen == 0){
-                System.out.print(bolen + " ");
-                sayac++;
+            if (input % divided == 0){
+                System.out.print(divided + " ");
+                counter++;
             }
-            bolen++;
+            divided++;
         }
         System.out.println("");
-        System.out.println(input + " sayini bolen " + sayac + " adet sayi vardir");
+        System.out.println("there are " + counter + " numbers "  +input+ " is  dividing" );
 
 
     }

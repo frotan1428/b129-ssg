@@ -5,30 +5,29 @@ import java.util.Scanner;
 public class IfStatements03 {
     public static void main(String[] args) {
 
-        //Soru 1) Kullanicidan bir tamsayi isteyin
-        // ve sayinin tek veya cift oldugunu yazdirin
+        // Question 1) Ask the user for an integer // and print whether the number is odd or even
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("Lutfen bir tam sayi giriniz");
-        int sayi= scan.nextInt();
+        System.out.println("Please Enter an Integer number");
+        int num= scan.nextInt();
 
-        if (sayi%2 == 0){
-            System.out.println("girilen sayi cift sayidir");
+        if (num%2 == 0){
+            System.out.println("Enter number is EVEN");
         }
 
-        if (sayi%2 != 0){
-            System.out.println("Girilen sayi tek sayi");
+        if (num%2 != 0){
+            System.out.println("Enter Number IS ODD");
         }
 
-        // normalde bir tamsayi ya tektir veya cifttir, ucuncu bir durum yoktur
-        // o zaman tek olmasi ve cift olmasini iki ayri if ile degil
-        // if else ile tek statement'da yapmak daha guzel olur
-        // ======== if else ile cozum=======
+        // normally an integer is either odd or even, there is no third case
+        // then it's odd and even, not two separate ifs
+        // It would be better to do it in a single statement with if else
+        // ========= solution with if else========
 
-        if (sayi%2==0){
-            System.out.println("girdiginiz sayi cift sayidir");
+        if (num%2==0){
+            System.out.println("Entered number is EVEN");
         } else {
-            System.out.println("girdiginiz sayi tek sayidir");
+            System.out.println("Entered number is ODD");
         }
 
     }

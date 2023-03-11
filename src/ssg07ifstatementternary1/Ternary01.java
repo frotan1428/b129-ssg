@@ -3,21 +3,21 @@ package ssg07ifstatementternary1;
 public class Ternary01 {
     public static void main(String[] args) {
 
-        // Bazen ternary'deki iki sonucun data turleri farkli olabilir
+        // Sometimes two results in a TERNARY  have different data types
 
-        // verilen sayi 100'den buyukse sayi'nin karesini  alip yazdiran
-        // 100'den kucukse " sayi 100'den buyuk olmali" yazdiran
-        // bir ternary olusturalim
+        // If the given number is greater than 100, print the   square the number and
+        //  if less than 100; prints "Number must be greater than 100"
+        // Let's create a TERNARY
 
 
-        int sayi= 150;
-        // ternary bize sonuc getirdiginden ya sonucu direk yazdirmaliyiz
-        // veya bir degoiskene atamaliyiz
-        // Eger sonuclar farkli data turlerinde ise
-        // atama yapacagimiz variable'in data turu tek olacagindan
-        // atama yapamayiz
-        // SADECE direk yazdirabiliriz
-        System.out.println(sayi>100 ? sayi*sayi : "sayi 100'den buyuk olmali");
+        int num= 150;
+        // Since the TERNARY  gives us the result, we need to print the result directly
+        // Or we need to assign a Variable
+        // If the results are in different data types
+        // Since the data type of the variable we assign will be unique
+        // Cannot assign
+        // We can only print directly
+        System.out.println(num>100 ? num*num : "Number should be greater then 100 ");
 
 
     }

@@ -6,42 +6,30 @@ public class WhileLoop03 {
     public static void main(String[] args) {
 
 
-        // kullanicidan kac sayi toplamak istedigini alin
-        // bu sayilari alin ve bu sayilarin toplamini ekrana yazdirin
+        // ask from how many number  wants to add .
+        // get these numbers and print the sum of these numbers on console
 
-       // int sayiAdedi=3;
+
 
         Scanner scan = new Scanner(System.in);
 
 
         // while ile yapalim
-        System.out.println("kaca tane sayi kadar   toplamk istiyorsunuz .");
-        int sayiAdedi=scan.nextInt();
-        int  sayi=0;
+        System.out.println("How many numbers do you want to sum?");
+        int countNumber=scan.nextInt();
+        int number=0;
         int toplam=0;
-        int sayac=1;
+        int conuter=1;
 
-        while (sayac<=sayiAdedi){
-            System.out.println(sayac + " : lutfen bir sayi giriniz");
-            sayi= scan.nextInt();
-            toplam+=sayi;
-            sayac++;
+        while (conuter<=countNumber){
+            System.out.println(conuter + " : please Enter number :");
+            number= scan.nextInt();
+            toplam+=number;
+            conuter++;
         }
-        System.out.println("girilen "+ sayiAdedi + " sayinin toplami : " + toplam);
+        System.out.println("enter  "+ countNumber + "number the total is:  : " + toplam);
 
 
-        /*
-        int sayi=0;
-        int toplam=0;
 
-        for (int i = 1; i <=sayiAdedi ; i++) {
-            System.out.println("lutfen bir sayi giriniz");
-            sayi= scan.nextInt();
-            toplam+=sayi;
-        }
-        System.out.println("girilen "+ sayiAdedi + " sayinin toplami : " + toplam);
-
-
-         */
     }
 }

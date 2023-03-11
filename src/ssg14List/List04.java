@@ -6,53 +6,42 @@ import java.util.List;
 public class List04 {
     public static void main(String[] args) {
 
-        // bir listede ortalamanin ustunde olan element sayisini bulunuz
+        // find the number of elements that are above average in a list
 
-        List<Double> sayilar = new ArrayList<>();
-        sayilar.add(1.0);
-        sayilar.add(3.0);
-        sayilar.add(5.0);
-        sayilar.add(3.0);
-        sayilar.add(5.0);
-        sayilar.add(6.0);
-        sayilar.add(1.0);
-        sayilar.add(7.0);
+        List<Double> numbers = new ArrayList<>();
+        numbers.add(1.0);
+        numbers.add(3.0);
+        numbers.add(5.0);
+        numbers.add(3.0);
+        numbers.add(5.0);
+        numbers.add(6.0);
+        numbers.add(1.0);
+        numbers.add(7.0);
 
-        // ortalamayi bul
-        double ortalama=0.0;
-        double toplam=0.0;
+        //find  Average
+        double average=0.0;
+        double total=0.0;
 
-        for (int i = 0; i <sayilar.size() ; i++) {
-            toplam+=sayilar.get(i);
+        for (int i = 0; i <numbers.size() ; i++) {
+            total+=numbers.get(i);
         }
 
 
+        average= total / numbers.size();
+        System.out.println(average); // 3.875
 
+        //above average, throw a list
 
+        List<Double> aboveAverage=new ArrayList<>();
 
-        ortalama= toplam / sayilar.size();
-        System.out.println(ortalama); // 3.875
-
-        // ortalamanin ustunde olanlari, bir liste at
-
-        List<Double> ortalamaninUstundekiler=new ArrayList<>();
-
-        for (int i = 0; i < sayilar.size() ; i++) {
-            if (sayilar.get(i)>ortalama){
-                ortalamaninUstundekiler.add(sayilar.get(i));
+        for (int i = 0; i < numbers.size() ; i++) {
+            if (numbers.get(i)>average){
+                aboveAverage.add(numbers.get(i));
             }
         }
-        System.out.println(ortalamaninUstundekiler);
+        System.out.println(aboveAverage);
 
 
-
-
-
-               for (Double w : sayilar){
-            toplam +=w;
-        }
-        ortalama = toplam/sayilar.size();
-        System.out.println(ortalama);//3.875
 
     }
 }

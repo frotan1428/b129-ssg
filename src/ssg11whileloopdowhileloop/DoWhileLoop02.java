@@ -5,21 +5,21 @@ import java.util.Scanner;
 public class DoWhileLoop02 {
     public static void main(String[] args) {
 
-        // kullanicidan istedigi kadar sayi girmesini isteyin
-        // kullanicinin girdigi sayilarin toplami 500'u gecerse
-        // artik yeter cok sayi girdin, toplam.... oldu yazsin
+        // ask the user to enter as many numbers as they want
+        // if the sum of the numbers entered by the user exceeds 500
+        // now you have entered enough numbers, the total is....
 
         Scanner scan = new Scanner(System.in);
 
-        int sayi=0;
-        int toplam=0;
+        int number=0;
+        int total=0;
 
-        do{
-            System.out.println("lutfen bir sayi giriniz");
-            sayi= scan.nextInt();
-            toplam+=sayi;
-        }  while (toplam<=500);
+        do {
+            System.out.println("Please enter a number");
+            number= scan.nextInt();
+            total+=number;
+        } while (total<=500);
 
-        System.out.println("artik yeter cok sayi girdin, toplam : " +toplam+ " oldu");
+        System.out.println("You have entered enough numbers now, the sum is: " +total+ "");
     }
 }

@@ -6,35 +6,35 @@ public class IfStatements04 {
     public static void main(String[] args) {
 
 
-        //Soru 3) Kullanicidan gun ismini alin ve haftaici veya hafta sonu oldugunu yazdirin
-        // 	Ornek:  	gun=Pazar output = “Hafta sonu”
-        //		gun=Sali output = “Hafta ici”
-        //	*** String icin equals method’unu kullanin
+        //Question 3) Get the day name from the user and print whether it is weekday or weekend
+        // Example: day=Sunday output = “Weekend”
+        // day=Tuesday output = “Weekday”
+        // *** Use equals method for String
 
-        // pazar veya cumartesi ise ===> hafta sonu
-        // pazartesi veya sali veya carsamba veya persembe veya cuma ise ==> hafta ici
+        // if sunday or saturday ===> weekend
+        // if monday or tuesday or wednesday or thursday or friday ==> weekday
 
 
-        // String case sensitive'dir
-        // yani pazar, PAZAR,Pazar, PAzar bunlar hep farkli kelimelerdir
+        // String is case sensitive
+        // so Sunday, SUNDAY, SUNDAY, SUNDAY these are all different words
 
-        // bu durumda String methodlarindan yardim aliriz
+        // in this case we get help from String methods
 
         Scanner scan= new Scanner(System.in);
-        System.out.println("Lutfen gun ismini yaziniz");
-        String gunIsmi=scan.next().toLowerCase(); // kullanici nasil yazarsa yazsin biz kucuk harfe ceviriyorz
+        System.out.println("Please write the name of the day");
+        String dayName=scan.next(); // Whatever the user writes, we convert it to lowercase
 
-        // String ifadelerde == kullanilmasi tavsiye edilmez
-        // cunku bekledigimizden farkli sonuc verebilir
+        // Using == in string expressions is not recommended
+        // Because it might give different results than we expected
 
-        if (gunIsmi.equals("pazar") || gunIsmi.equals("cumartesi")){
-            System.out.println("girdiginiz gun haftasonu");
+        if (dayName.equals("Sunday") || dayName.equals("Saturday")){
+            System.out.println("The day you entered is a weekend");
         }
 
-        if (gunIsmi.equals("pazartesi") || gunIsmi.equals("sali") ||
-                gunIsmi.equals("carsamba")||gunIsmi.equals("persembe") ||
-                gunIsmi.equals("cuma")){
-            System.out.println("girdiginiz gun hafta ici");
+        if (dayName.equals("Monday") || dayName.equals("Tuesday") ||
+                dayName.equals("Wednesday")||dayName.equals("Thursday") ||
+                dayName.equals("Friday")){
+            System.out.println("The day you entered, on the day of the week");
         }
 
 

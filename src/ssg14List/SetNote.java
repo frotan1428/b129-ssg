@@ -1,26 +1,43 @@
 package ssg14List;
 
 public class SetNote {
+/*
+        1)To create an "Array" we need to declare "the number of elements" at the beginning,
+        we may need more elements to store or less elements to store inside the array.
+        That is why declaring the number of elements at the beginning is not good.
+        This is the negative side of arrays.
+
+        To remove that negativity, Java created a new structure whose name is "ArrayList"(List is also used),
+        when we use "ArrayList", no need to declare the number of elements you want to store in it.
+
+        As a result; "Array" is fixed in length, "ArrayList" is flexible
+
+        2) "ArrayList" can store just "non-primitive" data, "Array" can store "primitive" data and "reference"
+
+        3) "Array"s work so fast
+        "Array"s use memory so less
+        If you are sure the number of elements will not change(For example month names), using "Array" is better
+        */
 
 
-    /*
-    List'lere coklu ve tekarali data depolamak istedegimizde ihtiyac duyariz
-    ex: hastandaki  hastalar simileri gibi
+/*
+    We need lists when we want to store multiple and recursive data.
+    ex: patients in your patient like sims
 
-    Set'lere coklu ama tekrarsz data depolamk istedigimizde ihtiyac  duyariz
-    ex:hastandadeh  hastanadki hastalarin idileri gibi
+    We need sets when we want to store multiple but non-repeatable data.
+    ex:handstand just like the idiots of the patients in your hospital
 
     */
          /*
-        1)LinkedList deki her eleman iki bolumden olusur i)Data ii)Pointer.
-        2)LinkedList deki her bir eleman "Node" olarak adlandirilir.
-        3)LinkedList ler eleman ekleme ve eleman silme islemlerinde cok basarilidirlar.
-        4)LinkedList ler eleman arama islemlerinde basarisizdirlar.
-        5)3. ve 4. maddelerden dolayi eleman ekleme ve eleman silme islemlerinin cok yapilacagi durumlarda LinkedList kullanilmalidir.
-        6)ArrayList'ler index kullanir LinkedList'ler index kullanmaz.
-        7)index kullanmak eleman bulma islemlerinde cok basarilidir. Bu yuzden eleman bulma islemlerini cok
-         yapacaksaniz ArrayList kullanmalisiniz.
-         8) ArrayList lerde silme ve eklem yaptgniz re-index yapar bunu icin yavas calisir.
+        1) Each element in LinkedList consists of two parts i)Data ii)Pointer.
+        2) Each element in LinkedList is called "Node".
+        3) LinkedLists are very successful in adding and deleting elements.
+        4) LinkedLists are unsuccessful in element search.
+        5)3. LinkedList should be used in cases where element addition and element deletion operations will be done frequently due to the 4th and 4th items.
+        6)ArrayLists use index LinkedLists do not use index.
+        7) Using index is very successful in finding elements. Therefore, it is very difficult to find personnel.
+         If you are going to do it, you should use ArrayList.
+         8) Deleting and re-indexing ArrayLists makes it work slowly.
 
     */
 

@@ -8,21 +8,18 @@ public class IfStatements02 {
         int b= 20;
 
         if (a>b && b<100){
-            System.out.println("isteginiz gerceklesecek");
-            System.out.println("body icindeki tum kodlar calisir");
+            System.out.println("your wish will come true");
+            System.out.println("All codes inside  body work");
         }
 
         if (a<0)
-            System.out.println("suslu parantez olmazsa sadece bir satir calisir");
+            System.out.println("only one line works without the curly braces");
 
-        // bir if cumlesinin daha anlasilir olmasini istiyorsaniz
-        // if body'sini {} icine yazmalisiniz
-        // body'yi {} icine yazmazsak da if cumlesi calisir
-        // ancak ilk ; gordugunde if cumlesi bitmis olur
+        // if you want an if statement to be more understandable
+        // you have to write the if body in {}
+        // If we don't write the body in {}, the if statement works
+        // but first; when you see the if statement is finished
 
-
-        // 24.satirdaki kod 15.satirdaki if dogru olsada calisir false olsa da calisir
-        System.out.println("2.satir calisti");
 
 
     }

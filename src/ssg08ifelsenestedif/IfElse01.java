@@ -5,18 +5,18 @@ import java.util.Scanner;
 public class IfElse01 {
     public static void main(String[] args) {
 
-        // girilen bir karakterin, harf olup olmadigini bulalim
+        // Let's find out if an input character is a letter or not
 
 
         Scanner scan= new Scanner(System.in);
-        System.out.println("Lutfen bir karakter giriniz");
-        char karakter=scan.next().charAt(0);
+        System.out.println("Please Enter a Charterer ");
+        char  charterer =scan.next().charAt(0);
 
-        if ((karakter>='A' && karakter<='Z')  || (karakter>='a' && karakter<='z')){
+        if ((charterer>='A' && charterer<='Z')  || (charterer>='a' && charterer<='z')){
 
-            System.out.println("Girdiginiz karakter bir harf");
+            System.out.println("Your Enter Charter is Letter");
         } else {
-            System.out.println("Girdiginiz karakter harf degil");
+            System.out.println("Your Enter Charter is not  Letter");
         }
 
 

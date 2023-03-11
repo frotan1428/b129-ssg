@@ -6,23 +6,23 @@ public class KarislastirmaOperator {
 
         System.out.println(5+2==8);//F
 
-        boolean sonuc1= 5>4 && 7<9 && 6+3==9 && 5+2!=8 ;//T
+        boolean reslut= 5>4 && 7<9 && 6+3==9 && 5+2!=8 ;//T
 
 
 
-        System.out.println(sonuc1);
+        System.out.println(reslut);
 
-        boolean sonuc2 = 5>4 && 7>9 && 6+3==9 && 5+2!=8 ;//F
-
-
-        System.out.println(sonuc2);
-
-        boolean sonuc3 = 5>4 & 7>9 & 6+3==9 & 5+2!=8 ;//F
+        boolean result2 = 5>4 && 7>9 && 6+3==9 && 5+2!=8 ;//F
 
 
+        System.out.println(reslut);
+
+        boolean reult3 = 5>4 & 7>9 & 6+3==9 & 5+2!=8 ;//F
 
 
-        System.out.println(sonuc3);
+
+
+        System.out.println(reult3);
 
 
     }

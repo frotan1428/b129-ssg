@@ -4,33 +4,29 @@ import java.util.Scanner;
 
 public class IfElseIf03 {
     public static void main(String[] args) {
-        // Kullanicidan iki sayi isteyin,
-        // sayilarin ikisi de pozitif ise sayilarin toplamini yazdirin,
-        // sayilarin ikisi de negative ise sayilarin carpimini yazdirin,
-        // sayilarin ikisi farkli isaretlere sahipse
-        // “farkli isaretlerde sayilarla islem yapamazsin” yazdirin,
-        // sayilardan sifira esit olan varsa “sifir carpmaya gore yutan elemandir” yazdirin.
-
+        // ask the user for two numbers,
+        // If both numbers are positive, print the sum of the numbers,
+        // If both numbers are negative, print the product of the numbers,
+        // If two numbers have different signs
+        // print "You cannot work with numbers with different signs",
+        // If either number is zero, print "Zero is the element absorbed by multiplication."
         Scanner scan = new Scanner(System.in);
-        System.out.println("Lutfen iki sayi giriniz");
+        System.out.println("Please Enter 2 Numbers");
 
-        double sayi1=scan.nextDouble();
-        double sayi2=scan.nextDouble();
+        double num1=scan.nextDouble();
+        double num2=scan.nextDouble();
 
-        // sayilarin ikisi de pozitif ise sayilarin toplamini yazdirin,
-        if (sayi1>0 && sayi2>0){
-            System.out.println("girdiginiz iki sayi da pozitif oldugundan toplamlari= " +
-                    (sayi1+sayi2));
-        } else if (sayi1<0 && sayi2<0){
-            // sayilarin ikisi de negative ise sayilarin carpimini yazdirin,
-            System.out.println("girdiginiz iki sayi da negatif oldugundan carpimmlari= " +
-                    (sayi1*sayi2));
-        } else if (sayi1*sayi2<0){
-            // sayilarin ikisi farkli isaretlere sahipse
-            // “farkli isaretlerde sayilarla islem yapamazsin” yazdirin,
-            System.out.println("farkli isaretlerde sayilarla islem yapamazsin");
+
+        if (num1>0 && num2>0){
+            System.out.println("two numbers you entered are positive, their sum =" +
+                    (num1+num2));
+        } else if (num1<0 && num2<0){
+            System.out.println("two numbers you entered are different sign , their product = " +
+                    (num1*num1));
+        } else if (num1*num2<0){
+            System.out.println("You cannot work with numbers with different signs.");
         } else {
-            System.out.println("sifir carpmaya gore yutan elemandir");
+            System.out.println("Zero is the absorbing element with respect to impact");
         }
 
     }

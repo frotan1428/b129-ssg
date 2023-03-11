@@ -3,38 +3,38 @@ package ssg09swicth;
 import java.util.Scanner;
 
 public class Switch021 {
-    // Kullanicidan kacinci ay oldugunu alip mevsimi yazdiran bir
-    // switch olusturun
+    // Gets the number of months from the user and prints the season.
+    // create switch
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("Lutfen kacinci ay oldugunu giriniz");
-        String ayIsmi=scan.next();
-        switch (ayIsmi){
+        System.out.println("Please enter the month");
+        String monthName=scan.next();
+        switch (monthName){
 
-            case "Mart":
-            case "Nisan":
-            case "Mayis":
-                System.out.println("Ilkbahar");
+            case "March":
+            case "April":
+            case "May":
+                System.out.println("Spring");
                 break;
-            case "Haziran":
-            case "Temmuz":
-            case "Agustos":
-                System.out.println("Yaz");
+            case "June":
+            case "July":
+            case "August":
+                System.out.println("Write");
                 break;
-            case "Eylul":
-            case "Ekim":
-            case "Kasim":
-                System.out.println("Sonbahar");
+            case "September":
+            case "October":
+            case "November":
+                System.out.println("Autumn");
                 break;
-            case "Aralik":
-            case "Ocak":
-            case "Subat":
-                System.out.println("Kis");
+            case "December":
+            case "January":
+            case "February":
+                System.out.println("Winter");
                 break;
 
             default:
-                System.out.println("Lutfen gecerli bir ay Ismi giriniz");
+                System.out.println("Please enter a valid month name");
         }
     }
 

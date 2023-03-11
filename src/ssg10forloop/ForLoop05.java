@@ -5,13 +5,14 @@ import java.util.Scanner;
 public class ForLoop05 {
     public static void main(String[] args) {
         /*
-        Soru 5) Kullanicidan 100'den kucuk bir tamsayi isteyin. 1'den baslayarak girilen sayiya kadar 3'un kati olan sayilari yazdirin.
+        Question 5) Ask the user for an integer less than 100.
+         Print numbers that are multiples of 3 from 1 to the number entered.
          */
 
         Scanner scan=new Scanner(System.in);
-        System.out.println("lutfen 100den kucuk bir sayi giriniz");
-        int sayi= scan.nextInt();
-        for (int i = 1; i <=sayi ; i++) {
+        System.out.println("Please enter a number less than 100");
+        int num= scan.nextInt();
+        for (int i = 1; i <=num ; i++) {
             if (i%3==0){
                 System.out.print(i+" ");
             }

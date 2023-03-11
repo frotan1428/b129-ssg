@@ -11,21 +11,21 @@ public class AssigementOpartor {
 
         x=x+4;
 
-        System.out.println(x);//9
+        System.out.println(x);
         x=x/2;
 
-        System.out.println(x);//4
+        System.out.println(x);
 
         x=x%y;
 
-        System.out.println(x);//0
+        System.out.println(x);
 
         y=x;
 
-        System.out.println(y);//0
+        System.out.println(y);
 
         x= x*y;
-        System.out.println(x-y);//0
+        System.out.println(x-y);
 
 
     }

@@ -7,7 +7,8 @@ public class NestedLoop02 {
         /*
 
 
-        Soru 2 ) Kullanicidan pozitif bir rakam girmesini isteyin ve girilen rakama gore asagidaki sekli cizdirin
+        Soru 2 ) Ask the user to enter a positive number and according to the entered number
+                draw the figure below
 
          *
          * *
@@ -15,9 +16,9 @@ public class NestedLoop02 {
          * * * *
          * * * * *
 
-            // nested for loop ya diktorgen veya ucgen formatinda olabilir
-           diktorgen istedigimizde iki loop icin de bagimsiz en point belirleriz
-           ucgen sekli vermek icin inner loop'un end point'ini olarak outer degiskene bagli yapariz
+        // nested for loop can be either rectangular or triangle format
+         When we want a rectangular , we  can specify the outer loop end point for the inner loop end point.
+        To give a triangle shape, we make the end point of the inner loop depend on the outer loop initial  variable.
 
        */
 
@@ -50,7 +51,9 @@ public class NestedLoop02 {
 
         }
 
-       /*Soru 4) Kullanicidan pozitif bir rakam girmesini isteyin ve girilen rakama gore asagidaki sekli cizdirin
+       /*
+       Ask the user to enter a positive number and according to the entered number
+                draw the figure below
 
         1
         22

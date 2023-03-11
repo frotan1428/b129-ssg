@@ -5,26 +5,25 @@ import java.util.List;
 
 public class List05 {
     public static void main(String[] args) {
-        // verilen bir array'den istenen elementi(kac tane varsa) silip, kalanlari
-        // yeni bir list  olarak yazdiran bir method olusturun
+        // delete the desired element (how many) from a given array and leave the rest
+        // create a method that prints it as a new list
 
         int arr[]={3,4,2,3,5,7,3,8,5,2,4};
-        int istenmeyenEleman=3;
+        int unwantedElement=3;
 
-        istenmeyenElementiSilveYazdir(arr,istenmeyenEleman);
+        createUnwantedElement(arr,unwantedElement);
     }
 
-    public static void istenmeyenElementiSilveYazdir(int[] arr, int istenmeyenEleman) {
-        List<Integer> yeniList=new ArrayList<>();
+    public static void createUnwantedElement(int[] arr, int unwantedElements) {
+        List<Integer> newList=new ArrayList<>();
 
          for (Integer w:arr){
-
-           if (w!=istenmeyenEleman){
-               yeniList.add(w);
+           if (w!=unwantedElements){
+               newList.add(w);
             
            }
        }
-        System.out.println(yeniList);//[4, 2, 5, 7, 8, 5, 2, 4]
+        System.out.println(newList);//[4, 2, 5, 7, 8, 5, 2, 4]
 
 
         // for (int i = 0; i <arr.length ; i++) {

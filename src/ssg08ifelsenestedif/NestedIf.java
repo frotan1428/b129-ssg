@@ -3,11 +3,9 @@ package ssg08ifelsenestedif;
 public class NestedIf {
 
     public static void main(String[] args) {
-        // bir kisinin kan baginda olup olmadigini control ediniz .
-        // yas:18 baslamali
-        // kilo : 50 dan ust olmali
-
-        //Yaş ve kilo için iki değişken oluşturma
+        // Check if a person is give blood or not .
+        // Start from age: 18
+        // Weight: must be over 50 // Create two variables for age and weight
 
 
         int age=25;
@@ -16,12 +14,12 @@ public class NestedIf {
         if(age>=18){
 
             if(weight>50){
-                System.out.println("Kan bağışında bulunmaya uygunsunuz");
+                System.out.println("You are eligible to donate blood");
             } else{
-                System.out.println("Kan bağışında bulunmaya uygun değilsiniz");
+                System.out.println("You are  not eligible to donate blood");
             }
         } else{
-            System.out.println("Yaşınız 18'den Büyük Olmalıdır");        }
+            System.out.println("your age should  be greater then 18:");        }
     }
 }
 

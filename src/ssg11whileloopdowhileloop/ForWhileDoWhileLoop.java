@@ -5,7 +5,7 @@ public class ForWhileDoWhileLoop {
     public static void main(String[] args) {
 
 
-        //Soru 1) 1 ile 5 arasindaki(3 ve  8 dahil) sayilari  ayni satirda yazdirin
+        //Question 1) Print numbers 1 to 5 (including 3 and 8) on the same line
 
         // 1 . yol
         for (int i = 1; i <=5 ; i++) {

@@ -4,9 +4,9 @@ public class ForLoop02 {
 
     public static void main(String[] args) {
 
-
-    /*
-    Soru 2) 10 ile 30 arasindaki(10 ve 30 dahil) sayilari aralarinda virgul olarak ayni satirda yazdirin
+/*
+    Question 2) write a program Between 10 and 30 (including 10 and 30)
+    print numbers on the same line with commas between them
      */
         int bas = 20;
         int son = 50;
@@ -14,7 +14,8 @@ public class ForLoop02 {
             if (i<son){
                 System.out.print(i+",");
 
-            }else System.out.print(i);
+            }else
+                System.out.print(i);
 
 
         }

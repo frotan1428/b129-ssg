@@ -9,22 +9,17 @@ public class IfStatements01 {
 
 
         if (a == b) {
-
-            System.out.println("verilen sayilar esit");
-
+            System.out.println("Given Number are equals");
         }
 
         if (a > 100) {
-            System.out.println("a yuzden buyuk");
+            System.out.println("a is greater Then 100");
         }
 
         if (a * b > 1) {
-            System.out.println("sayilarin carpimi 5 ten buyuk");
+            System.out.println("the product if a*b is grater then 100");
         }
-        // bagimsiz if cumleleri kendileri disindaki kodlarla ilgilenmezler
-        // bir sart ve o sarta bagli sonuca odaklidir
-        // birden fazla bagimsiz if cumlesi oldugunda hepsinin body calisabilecegi gibi
-        //  hicbirisinin body'si calismayada bilir
+
 
     }
 }

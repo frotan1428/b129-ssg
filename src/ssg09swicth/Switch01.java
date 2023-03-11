@@ -4,86 +4,87 @@ import java.util.Scanner;
 
 public class Switch01 {
     public static void main(String[] args) {
-        // kullanicidan sayi olarak kacinci ay oldugunu  alip
-        // istenen ay ismini yazdiran bir program yaziniz
+        // get the number of months from the user
+        // write a program that prints the desired month name on console.
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("Lutfen kacinci ay oldugunu giriniz");
-        int ayNo=scan.nextInt();
+        System.out.println("Please enter the month name");
+        int monthNo=scan.nextInt();
 
         // bu soruyu if else ile yapabiliriz ama art arda 12 if else
         // cok kalabalik ve anlasilmasi guc olabilir
         // bunun yerine switch - case yapisini kullanabiliriz
 
-        if (ayNo == 1) {
-            System.out.println("Ocak");
-        } else if (ayNo==2){
-            System.out.println("Subat");
-        }else if (ayNo==3){
-            System.out.println("Mart");
-        }else if (ayNo==4){
-            System.out.println("Nisan");
-        }else if (ayNo==5){
-            System.out.println("Mayis");
-        }else if (ayNo==6){
-            System.out.println("Haziran");
-        }else if (ayNo==7){
-            System.out.println("Temmuz");
-        }else if (ayNo==8){
-            System.out.println("Agustos");
-        }else if (ayNo==9){
-            System.out.println("Eylul");
-        }else if (ayNo==10){
-            System.out.println("Ekim");
-        }else if (ayNo==11){
-            System.out.println("Kasim");
-        }else if (ayNo==12){
-            System.out.println("Aralik");
+        if (monthNo == 1) {
+            System.out.println("January");
+        } else if (monthNo==2){
+            System.out.println("February");
+        }else if (monthNo==3){
+            System.out.println("March");
+        }else if (monthNo==4){
+            System.out.println("April");
+        }else if (monthNo==5){
+            System.out.println("May");
+        }else if (monthNo==6){
+            System.out.println("June");
+        }else if (monthNo==7){
+            System.out.println("July");
+        }else if (monthNo==8){
+            System.out.println("August");
+        }else if (monthNo==9){
+            System.out.println("September");
+        }else if (monthNo==10){
+            System.out.println("October");
+        }else if (monthNo==11){
+            System.out.println("November");
+        }else if (monthNo==12){
+            System.out.println("December");
         }else {
-            System.out.println("Lutfen gecerli bir ay numarasi giriniz");
+            System.out.println("Please enter a valid month number");
         }
 
-        switch (ayNo){
+        switch (monthNo){
 
             case 1:
-                System.out.println("Ocak");
+                System.out.println("January");
                 break;
             case 2:
-                System.out.println("Subat");
+                System.out.println("February");
                 break;
             case 3:
-                System.out.println("Mart");
+                System.out.println("March");
                 break;
             case 4:
-                System.out.println("Nisan");
+                System.out.println("April");
                 break;
             case 5:
-                System.out.println("Mayis");
+                System.out.println("May");
                 break;
             case 6:
-                System.out.println("Haziran");
+                System.out.println("June");
                 break;
             case 7:
-                System.out.println("Temmuz");
+                System.out.println("July");
                 break;
             case 8:
-                System.out.println("Agustos");
+                System.out.println("August");
                 break;
             case 9:
-                System.out.println("Eylul");
+                System.out.println("September");
                 break;
             case 10:
-                System.out.println("Ekim");
+                System.out.println("October");
                 break;
             case 11:
-                System.out.println("Kasim");
+                System.out.println("November");
                 break;
             case 12:
-                System.out.println("Aralik");
+                System.out.println("December");
                 break;
             default:
-                System.out.println("Lutfen gecerli bir ay numarasi giriniz");
+                System.out.println("Please enter a valid month number");
         }
+
         // switch icine yazilan variable'in degerine gore
         // ilgili case'i bulur ve break gorene kadar kodu calistirir
         // eger break yoksa ilgili case'den asagi dogru tum case'ler calisir

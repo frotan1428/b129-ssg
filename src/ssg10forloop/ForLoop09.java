@@ -2,8 +2,8 @@ package ssg10forloop;
 
 public class ForLoop09 {
     /*
-    5 hariç 3'ten 9'a kadar olan tam sayıları yazdırmak için kod yazınız.
-     */
+     Write code to print integers from 3 to 9 excluding 5
+      */
     public static void main(String[] args) {
         for (int i = 3; i <=9 ; i++) {
             if (i==5){

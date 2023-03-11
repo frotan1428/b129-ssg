@@ -5,16 +5,16 @@ import java.util.Scanner;
 public class Switch04 {
     public static void main(String[] args) {
 
-        // Ayakkabi Boyutu kontrol etmek için Java Programı
-        // switch...case ifadesini kullanarak
-        //Boyyutu icin size ler: small -Medium- Large- Extra -Large-unKnown-
+        // Java Program to check Shoe Size
+        // using the switch...case statement
+        //Sizes for size: small -Medium- Large- Extra -Large-unKnown-
         Scanner input = new Scanner(System.in);
         System.out.println("lutfen ayyakabi numarsi giriniz");
-        int ayakkabiNumarsi = input.nextInt();
+        int shoeNumber = input.nextInt();
         //String size = null;
         // switch statement to check size
         String size = null;
-        switch (ayakkabiNumarsi) {
+        switch (shoeNumber) {
 
             case 36:
             case 38:
@@ -40,7 +40,7 @@ public class Switch04 {
                 size = "Unknown";
                 break;
             default:
-                System.out.println("lutfen gecerli bir ayakkabi numarasi Giriniz");
+                System.out.println("please Enter valid shoesNumber");
 
 
         }

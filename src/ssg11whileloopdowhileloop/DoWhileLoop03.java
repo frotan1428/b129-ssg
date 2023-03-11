@@ -4,53 +4,52 @@ import java.util.Scanner;
 
 public class DoWhileLoop03 {
     public static void main(String[] args) {
-        // kullanicidan toplamak istedigi sayilari alin
-        // ve kullanici 0'a basincaya kadar devam edin
-        // kullanici 0'a bastiginda
-        // girdigi tum sayilarin toplamini yazdirin
+        // ask from user to enter a  numbers  find the sum of number
+        // and continue until the user presses 0
+        // when the user presses 0
+        // print the sum of all the numbers entered
 
         Scanner scan = new Scanner(System.in);
 
-        int sayi=1;
-        int toplam=0;
-        do {
-            System.out.println("lutfen bir sayi giriniz");
-            sayi= scan.nextInt();
-            toplam+=sayi;
-        }while (sayi!=0);
-        System.out.println(toplam);
+        int number=1;
+        int total=0;
 
-     /*
-       2. yol
-        while (sayi!=0){
-            System.out.println("lutfen bir sayi giriniz");
-            sayi= scan.nextInt();
-            toplam+=sayi;
-        }
-        System.out.println(toplam);
+//        do {
+//            System.out.println("Please enter a number");
+//            number= scan.nextInt();
+//            total+=number;
+//        }while(number!=0);
+//        System.out.println(total);
+
+      // 2nd way
+//        while (number!=0){
+//            System.out.println("Please enter a number");
+//            number= scan.nextInt();
+//            total+=number;
+//        }
+//        System.out.println(total);
 
 
 
-         */
 
-        // baslangic,bitis ve degisim degerleri net olan durumlarda for loop daha avantajlidir
-        // ama adim sayisi belli olmayan durumlarda while loop daha avantajlidir
+        // for loop is more advantages when the start, end pint  and change values are define
+        // but the while loop is more advantages in cases where the number of steps is not clear
         // 3 .yol
-/*
-        for (int i = 1; i <1000000 ; i++) {
-            System.out.println("lutfen bir sayi giriniz");
-            sayi= scan.nextInt();
 
-            if (sayi==0){
+        for (int i = 1; i < 1000000 ; i++) {
+            System.out.println("Please enter a number");
+            number= scan.nextInt();
+
+            if (number==0){
              break;
             } else {
-                toplam+=sayi;
+                total+=number;
             }
 
         }
-         */
 
-        // System.out.println(toplam);
+
+       System.out.println(total);
 
     }
 }

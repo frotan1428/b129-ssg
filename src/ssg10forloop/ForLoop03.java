@@ -3,7 +3,7 @@ package ssg10forloop;
 public class ForLoop03 {
     public static void main(String[] args) {
  /*
- soru 3) 100'e(dahil) kadar olan tek ve cift sayıları iki ayrı dongu ile yazdırın.
+ soru 3) Print odd and even numbers up to (inclusive) 100 with two separate loops.
  */
         for (int i = 0; i <=100; i++) {
             if (i%2==1){
